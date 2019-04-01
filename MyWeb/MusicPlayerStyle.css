@@ -1,0 +1,83 @@
+﻿body {
+}
+#ControlPanel {
+    margin: auto;
+    border: 5px solid;
+    border-radius:5px;
+    background-color:#97f3eb;
+    clear:both;
+}
+
+#FuncBtn > span {
+    border: 2px solid;
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+    font-family: Webdings;
+    font-size: 24pt;
+    background-color:white;
+}
+
+#volValue {
+    width: 25px;
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+
+#settime {
+    background-color: #808080;
+    height: 10px;
+    cursor: pointer;
+}
+
+#progress {
+    background-color: #ff6a00;
+    height: 10px;
+    width: 0;
+}
+
+#Sbook, #Tbook {
+    width: 294px;
+    border: 3px solid;
+    float: left;
+    height: 200px;
+    overflow: auto;
+    cursor: copy;
+    background-color:#c4f691;
+}
+
+#btnUpdateMusic {
+    border: 2px solid;
+    text-align: center;
+    font-size: 18pt;
+    cursor: pointer;
+    background-color:yellow;
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+@font-face {
+    font-family: 'MyPlayerFont';
+    src: url('fonts/WEBDINGS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyPlayerFont';
+    src: url('fonts/WEBDINGS.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'MyPlayerFont';
+    src: url('fonts/WEBDINGS.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'MyPlayerFont';
+    src: url('fonts/WEBDINGS.woff') format('woff');
+}

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    X:<input id="TextX" type="text" />
+    Y:<input id="TextY" type="text" />
+    <img src="image/CAR.png" id="car" />
+    <hr />
+    <h1 id="showtime"></h1>
+    <style>
+        #car {
+            position: absolute;
+            left: 0;
+        }
+    </style>
+    <script>
+        //name = prompt("請輸入您的姓名:", "");
+        //console.log(name);
+        //document.write(name);
+        //window.alert(name);
+
+        //n = '""';
+        //document.write(n);
+
+        /////////////////////////////////////
+        var m;
+        m = 123;
+        m = 121.23;
+        m = "aaa123";
+        console.log(m);
+
+        //////////////////////////////////////
+        var k;
+        k = 99;
+        console.log(k);
+        //document.write(k);
+        if (k)
+            document.write("有定義");
+        else
+            document.write("無定義");
+
+        ////////////////////////////////////
+        document.write("<hr />");
+        //數值資料型態分類//
+        a = 123; /// 10進位
+        console.log("a=" + a);
+        a = 0123;/// 8進位
+        console.log("a=" + a);
+        a = 0678;/// 10進位. 8進位裡沒有8
+        console.log("a=" + a);
+        a = 0x753AC4;/// 16進位
+        console.log("a=" + a);
+        a = 0.0005;/// 16進位
+        console.log("a=" + a);
+        a = 5e-4;/// 16進位
+        console.log("a=" + a);
+        e = 123;
+        console.log(e);
+        document.write(e);
+        document.write("<hr />");
+        ////////////////////////////////
+        //alert("您的螢幕解析度為" + screen.width + "*" + screen.height);
+        document.onmousemove = function (evnt) {
+            //alert(evnt.pageX);
+            TextX.value = evnt.pageX;
+            TextY.value = evnt.pageY;
+        }
+        ////////////////////////////////
+        // 小時鐘
+        function showmytime() {
+            var myDate = new Date();
+            var h = myDate.getHours();
+            var m = myDate.getMinutes();
+            var s = myDate.getSeconds();
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+            showtime.innerText = h + ":" + m + ":" + s;
+            setTimeout(showmytime, 1000);
+        }
+        showmytime();
+        //////////////////////////////
+        // 動畫 小車子
+        var car = document.getElementById("car");
+        function mycar() {
+            var x = car.offsetLeft;
+            x += 2;
+            car.style.left = x + "px";
+            if (car.offsetLeft <= 800) {
+                console.log(car.offsetLeft);
+                setTimeout(mycar, 10);
+            }
+        }
+        mycar();
+    </script>
+</body>
+</html>

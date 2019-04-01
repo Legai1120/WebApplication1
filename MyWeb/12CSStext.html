@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Welcome Legai's Homepage</h1>
+    <h1 style="text-align:center">Welcome Legai's Homepage</h1>
+    <h1 style="text-align:right">Welcome Legai's Homepage</h1>
+    <hr />
+
+    <h1 style="width:800px;background-color:#00ffff">Welcome Legai's Homepage</h1>
+    <h1 style="width:800px;background-color:#00ffff;text-align:center">Welcome Legai's Homepage</h1>
+    <h1 style="width:800px;background-color:#00ffff;text-align:right">Welcome Legai's Homepage</h1>
+    <hr />
+
+    <p style="background-color:#ffd800">Welcome Legai's Homepage</p>
+    <p style="background-color:#ffd800">Welcome Legai's Homepage</p>
+    <p style="background-color:#ffd800;cursor:crosshair">Welcome Legai's Homepage</p>
+    <hr />
+
+    <a href="https://www.google.com.tw" style="font-size:36pt;text-decoration:none;cursor:alias">請點選我!!!!</a>
+    <hr />
+
+    <h2 style="text-decoration:line-through;color:#afd50e">原價:$30000</h2>
+    <h1 style="text-decoration:underline;color:#ef3434">破盤大特價:$10000</h1>
+
+    <h2 style="text-decoration:line-through;color:#afd50e">原價:$30000</h2>
+    <h style="text-decoration:underline;color:#ef3434;font-size:60pt;font-family:Forte">破盤大特價:$10000</h>
+    <hr />
+
+    <h1 style="text-transform:uppercase">Welcome Legai's Homepage</h1>
+    <h1 style="text-transform:lowercase">Welcome Legai's Homepage</h1>
+    <h1>welcome legai's homepage</h1>
+    <h1 style="text-transform:capitalize">welcome legai's homepage</h1>
+    <hr />
+
+    <h1 style="text-shadow:30px 30px 30px;font-size:50pt;color:#ffd800">Welcome Legai's Homepage</h1>
+    <h1 style="box-shadow:30px 30px 30px;font-size:50pt;color:#ffd800;width:800px">Welcome Legai's Homepage</h1>
+    <hr />
+
+    <h1 style="letter-spacing:24pt">Welcome Legai's Homepage</h1>
+    <h1 style="word-spacing:24pt">Welcome Legai's Homepage</h1>
+    <h1 style="word-spacing:24pt">歡迎光臨</h1>
+    <h1 style="letter-spacing:24pt">歡迎光臨</h1>
+    <hr />
+
+    <p id="news">
+        高雄市拋出將發行區域性商圈金融貨幣「高雄幣」，中央銀行發行局局長施遵驊昨（8）日表示，「高雄幣」其實不是貨幣，是某種折扣或優惠券，與央行的鑄幣權或專利並不牴觸。
+
+        為刺激高雄經濟、促進消費，高雄市長韓國瑜將於1月18日推出高雄幣App，首波試辦選定六合、光華及南華等三大商圈百家業者，只要消費者使用，不限消費方式，就可以獲得1%到10%回饋金，下次消費時可直接折抵，且地點限定為高雄。
+    </p>
+    <input id="button1" type="button" value="放大" />
+    <input id="button2" type="button" value="縮小" />
+    <input id="button3" type="button" value="復原" />
+    <script>
+        var btn1 = document.getElementById("button1");
+        var btn2 = document.getElementById("button2");
+        var btn3 = document.getElementById("button3");
+        var news = document.getElementById("news");
+
+        btn1.addEventListener('click', function () {
+            news.style.fontSize = "36pt";
+        });
+        btn2.addEventListener('click', function () {
+            news.style.fontSize = "8pt";
+        });
+        btn3.addEventListener('click', function () {
+            news.style.fontSize = "12pt";
+        });
+    </script>
+</body>
+</html>
